@@ -1,5 +1,6 @@
 // Project 1: LED Blinking
 // Group Members: Josh Wild, Dayne Newman
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)
 // Date: 2/2/2025
 // Code written by: Both team members
 
