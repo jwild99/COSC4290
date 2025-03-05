@@ -1,9 +1,7 @@
 // Project 4: Custom Design
 
-// The purpose of this project was to create a custom design using a light sensor, FSR sensor, 
-// potentiometer, LED, motor, and buzzer. We decided to make a design where the user is meant to practice their grip strength with the FSR.
-// If the light sensor detects it is night time and the user is asleep, it vibrates the motor and flashes the light to wake them up. When the FSR sensor
-// detects the user is applying pressure, it tones the buzzer. The pitch of the buzzer may also be adjusted using the potentiometer.
+// The purpose of this project was to create a smart led design which adjusts the brightness based on the ambient light level of the 
+// environment. It also uses an FSR sensor to create a sort of alert flashing light that blinks faster as the pressue on the FSR increases.
 
 // Group Members: Josh Wild, Dayne Newman
 // Group Number: 14 (not sure this is what the bottom of the breadboard said)
@@ -14,19 +12,25 @@
 const int LIGHT_SENSOR_PIN = A0; // light sensor's pin
 const int LED_BRIGHTNESS_PIN = 11; // LED's pin
 
+// FSR sensor and corresponding LED pin
 const int FSR_PIN = A1;
 const int FSR_LED_PIN = 10;
 
+// pressure threshold to start blinking the FSR LED
 const int PRESSURE_THRESHOLD = 0;
 
+// beginning LED brightness 
 int ledBrightness = 125;
+
+// threshold for when the LED should dim or brighten
 const int DARKNESS_THRESHOLD = 100;
 
-// variables will change:
+// value read by pressure sensor
 int pressureValue;
 
 void setup() {
-  pinMode(LED_BRIGHTNESS_PIN, OUTPUT); // set arduino pin to output mode
+  // set LED pin modes to output and open Serial connection
+  pinMode(LED_BRIGHTNESS_PIN, OUTPUT); 
   pinMode(FSR_LED_PIN, OUTPUT);
   Serial.begin(9600);
 }
