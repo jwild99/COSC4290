@@ -1,9 +1,8 @@
 // Project 4: Custom Design
 
-// The purpose of this project was to create a custom design using a light sensor, FSR sensor, 
-// potentiometer, LED, motor, and buzzer. We decided to make a design where the user is meant to practice their grip strength with the FSR.
-// If the light sensor detects it is night time and the user is asleep, it vibrates the motor and flashes the light to wake them up. When the FSR sensor
-// detects the user is applying pressure, it tones the buzzer. The pitch of the buzzer may also be adjusted using the potentiometer.
+// The purpose of this project was to create a design which detects if a new peak has been found within the readings from either a light sensor or
+// an FSR sensor. A threshold value is used to ensure that a new peak is only achieved if the sensor reading drops below the threshold. This ensures
+// that a peak is actually a peak and not just a high point in the data.
 
 // Group Members: Josh Wild, Dayne Newman
 // Group Number: 14 (not sure this is what the bottom of the breadboard said)
