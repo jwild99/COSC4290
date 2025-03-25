@@ -1,3 +1,13 @@
+// Project 5: NTC 100k Thermistor
+
+// The purpose of this project was to create a design to read in temperature data from the NTC 100k Thermistor and display
+// it to the serial monitor
+
+// Group Members: Josh Wild, Dayne Newman
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)
+// Date: 3/25/2025
+// Code written by: Both team members 
+
 int ThermistorPin = A0;
 int Vo;
 float R1 = 10000;

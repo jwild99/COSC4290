@@ -1,3 +1,14 @@
+// Project 5: TMP36 Sensor
+
+// The purpose of this project was to create a design that could read in the temperature from a TMP36 sensor and
+// display it to the serial monitor
+
+// Group Members: Josh Wild, Dayne Newman
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)
+// Date: 3/25/2025
+// Code written by: Both team members 
+
+
 //TMP36 Pin Variables
 int sensorPin = 0; //the analog pin, the TMP36's Vout
 //(sense) pin is connected to
