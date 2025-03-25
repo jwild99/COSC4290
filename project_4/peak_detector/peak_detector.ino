@@ -1,3 +1,15 @@
+// Project 4: Custom Design
+
+// The purpose of this project was to create a design which detects if a new peak has been found within the readings from either a light sensor or
+// an FSR sensor. A threshold value is used to ensure that a new peak is only achieved if the sensor reading drops below the threshold. This ensures
+// that a peak is actually a peak and not just a high point in the data.
+
+// Group Members: Josh Wild, Dayne Newman
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)
+// Date: 3/4/2025
+// Code written by: Both team members 
+
+
 #include <stdio.h>
 
 // initial peak value

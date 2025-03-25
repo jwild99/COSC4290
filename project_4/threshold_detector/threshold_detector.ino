@@ -1,3 +1,14 @@
+// Project 4: Threshold Detection
+
+// The purpose of this project was to create a design which is able to detect when the reading from either a light sensor or
+// FSR sensor crosses a threshold. If it does, print out that this occurred.
+
+// Group Members: Josh Wild, Dayne Newman
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)
+// Date: 3/4/2025
+// Code written by: Both team members 
+
+
 int lastSensorState = LOW; // sensor's previous state
 int threshold = 512; // an arbitrary threshold value
 
