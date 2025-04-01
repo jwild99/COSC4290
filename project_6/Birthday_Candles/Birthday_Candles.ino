@@ -1,8 +1,15 @@
-// Circuit Playground Birthday Candles
+// Project 6: Part 3 "Microphone Demo"
 //
-// All the NeoPixels will flicker like candles and the speaker will
-// play the tune to Happy Birthday continuously.  Blow on the board
-// to slowly blow out all the candles and hear a victory song!
+// The purpose of this project was to simulate birthday candles using the Circuit Playground's 
+// onboard NeoPixels, speaker, and microphone. The lights flicker when playing a tone and the 
+// microphone is used to "blow out" the candles which would play another tone afterward.
+// 
+
+// Group Members: Josh Wild, Dayne Newman  
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)  
+// Date: 3/31/2025  
+// Code written by: Both team members  
+//
 // Controls:
 //  - Slide switch: Move this to +/on to hear music or -/off to disable sound.
 //  - Left button: Hold this down and press reset to use a rainbow flicker color.
