@@ -1,3 +1,14 @@
+// Project 6: Section 3 Part 3 "Twinkle"
+
+// The purpose of this exercise was to show the positional sensors in the CircuitPlayground and "twinkle"
+// the board with various colors using all the LEDS whenever it moves to a new position
+
+// Group Members: Josh Wild, Dayne Newman
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)
+// Date: 3/31/2025
+// Code written by: Both team members 
+
+
 #include <Adafruit_CircuitPlayground.h>
 
 float X, Y, Z;
