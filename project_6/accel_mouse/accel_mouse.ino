@@ -1,11 +1,13 @@
-// Circuit Playground Accelerometer Mouse Example
-// Tilt Circuit Playground left/right and up/down to move your mouse, and
-// press the left and right push buttons to click the mouse buttons!  Make sure
-// the slide switch is in the on (+) position to enable the mouse, or slide into
-// the off (-) position to disable it.  By default the sketch assumes you hold
-// Circuit Playground with the USB cable coming out the top.
-// Author: Tony DiCola
-// License: MIT License (https://opensource.org/licenses/MIT)
+// Project 6: Part 3 "accel_mouse"
+
+// The purpose of this project was to use the Circuit Playground's accelerometer to control mouse movement, 
+// and the left/right buttons to click like a mouse.
+
+// Group Members: Josh Wild, Dayne Newman  
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)  
+// Date: 3/31/2025  
+// Code written by: Both team members 
+
 #include <Adafruit_CircuitPlayground.h>
 #include <Mouse.h>
 #include <Wire.h>
