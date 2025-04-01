@@ -1,15 +1,12 @@
-// Talkie library
-// Copyright 2011 Peter Knight
-// This code is released under GPLv2 license.
-//
-// The following phrases are derived from VM61003/4/5 ROMs
-//
-// A male voice with a US accent.
-//
-// These phrases have a very military bias
-// with lots of very useful engineering words.
-// They also have good expression.
-// 
+// Project 6: Part 3 "Speech Demo"
+
+// The purpose was to integrate and test the Talkie speech library on 
+// the Adafruit Circuit Playground using pre-defined ROM phrases.
+
+// Group Members: Josh Wild, Dayne Newman  
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)  
+// Date: 3/31/2025  
+// Code written by: Both team members  
 
 #include <Adafruit_CircuitPlayground.h>
 #include <Wire.h>
