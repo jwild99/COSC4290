@@ -1,6 +1,12 @@
-// Adafruit Circuit Playground - Two tone sounds    Support Open Source, buy at Adafruit
-//   2016-08-05 Version 1  by Mike Barela for Adafruit Industries
-// Uses the CircuitPlayground library to easily use the full functionality of the board
+// Project 6: Part 4.b.I "The Circuit Playground Library"
+
+// The purpose of this project was to use the left and right buttons on the Circuit Playground 
+// to trigger two different tones. 
+
+// Group Members: Josh Wild, Dayne Newman  
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)  
+// Date: 3/31/2025  
+// Code written by: Both team members  
 
 #include <Adafruit_CircuitPlayground.h>
 
