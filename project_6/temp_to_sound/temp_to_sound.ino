@@ -18,8 +18,8 @@ void setup() {
 }
  
 void loop() {
-   float temp; 
-   uint16_t sound;
+   float temp; //store temperature
+   uint16_t sound; //tone
    if(CircuitPlayground.slideSwitch()) {       // if the slide switch is at "+"
      temp = CircuitPlayground.temperatureF();  //   read the light sensor
      Serial.println(temp);
