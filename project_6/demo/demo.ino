@@ -1,4 +1,12 @@
-// Demo program for testing library and board - flip the switch to turn on/off buzzer
+// Project 6: Part 3 "Demo"
+
+// The purpose of this program was to test the different built-in features of the
+// Circuit Playground
+
+// Group Members: Josh Wild, Dayne Newman  
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)  
+// Date: 3/31/2025  
+// Code written by: Both team members  
 
 #include <Adafruit_CircuitPlayground.h>
 
@@ -19,8 +27,8 @@ void loop() {
 
   // test Red #13 LED
   CircuitPlayground.redLED(HIGH);
-  delay(100);
-  CircuitPlayground.redLED(LOW);
+  delay(100); //wait 100ms
+  CircuitPlayground.redLED(LOW); //turn off Red LED
 
   /************* TEST CAPTOUCH */
   Serial.print("Capsense #3: "); Serial.println(CircuitPlayground.readCap(3));
@@ -38,14 +46,14 @@ void loop() {
     Serial.println("Slide to the left");
   } else {
     Serial.println("Slide to the right");
-    CircuitPlayground.speaker.enable(true);
-    CircuitPlayground.playTone(500 + pixeln * 500, 100);
+    CircuitPlayground.speaker.enable(true); //enable speaker
+    CircuitPlayground.playTone(500 + pixeln * 500, 100); //playing tone
   }
-  delay(10);
+  delay(10); //wait 10ms
 
   /************* TEST 10 NEOPIXELS */
   CircuitPlayground.setPixelColor(pixeln++, CircuitPlayground.colorWheel(25 * pixeln));
-  if (pixeln == 11) {
+  if (pixeln == 11) { //reset after cycling through all 10 pixels
     pixeln = 0;
     CircuitPlayground.clearPixels();
   }
