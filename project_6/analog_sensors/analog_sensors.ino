@@ -1,10 +1,13 @@
-// Circuit Playground Analog Sensor Demo
-// Shows how to read an analog sensor like temperature, light,
-// sound, or even external inputs and convert the analog value
-// to color and sound on the board.  Will light up NeoPixel 4 and 5
-// with a color proportional to the analog value, and if the slide
-// switch is turned to the left will play a music tone proportional
-// to the value.
+// Project 6: Part 3 "Analog Sensors"
+
+// The purpose of this project was to read values from an analog sensor (e.g., light, sound, temperature), 
+// then convert that sensor input into a visual and auditory output. 
+
+// Group Members: Josh Wild, Dayne Newman  
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)  
+// Date: 3/31/2025  
+// Code written by: Both team members
+
 #include <Adafruit_CircuitPlayground.h>
 #include <Wire.h>
 #include <SPI.h>
@@ -85,5 +88,5 @@ void loop() {
   }
 
   // Delay for a bit and repeat the loop.
-  delay(100);
+  delay(100); //wait 100 ms
 }
