@@ -1,6 +1,6 @@
 // Project 6: Section 3 Part 3 "Twinkle"
 
-// The purpose of this exercise was to show the positional sensors in the CircuitPlayground and "twinkle"
+// The purpose of this exercise was to show the accelerometer in the CircuitPlayground and "twinkle"
 // the board with various colors using all the LEDS whenever it moves to a new position
 
 // Group Members: Josh Wild, Dayne Newman
@@ -11,8 +11,9 @@
 
 #include <Adafruit_CircuitPlayground.h>
 
-float X, Y, Z;
-#define NUM_LEDS   10
+float X, Y, Z; //variables for accelerometer values
+//Total # of NeoPixels
+#define NUM_LEDS   10 
 
 // Here is where you can put in your favorite colors that will appear!
 // just add new {nnn, nnn, nnn}, lines. They will be picked out randomly
@@ -35,6 +36,7 @@ void setup() {
 
 void loop() {
   //CircuitPlayground.clearPixels();
+  //Reading accelerometer values
   X = CircuitPlayground.motionX();
   Y = CircuitPlayground.motionY();
   Z = CircuitPlayground.motionZ();
@@ -69,6 +71,7 @@ void loop() {
   }
 }
 
+//randomly lights up random LEDs and fades out 
 void flashRandom(int wait, uint8_t howmany) {
 
   for(uint16_t i=0; i<howmany; i++) {
@@ -89,7 +92,7 @@ void flashRandom(int wait, uint8_t howmany) {
       int b = blue * (x+1); b /= 5;
       
       CircuitPlayground.setPixelColor(j, r, g, b);
-      delay(wait);
+      delay(wait); //wait for wait var
     }
     // & fade out in 5 steps
     for (int x=5; x >= 0; x--) {
@@ -98,7 +101,7 @@ void flashRandom(int wait, uint8_t howmany) {
       int b = blue * x; b /= 5;
       
       CircuitPlayground.setPixelColor(j, r, g, b);
-      delay(wait);
+      delay(wait); //wait for wait var
     }
   }
   // LEDs will be off when done (they are faded to 0)
