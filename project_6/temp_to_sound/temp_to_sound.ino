@@ -1,6 +1,12 @@
-// Adafruit Circuit Playground - Temperature to Sound  Support Open Source, buy Adafruit
-//   2016-08-07 Version 1  by Mike Barela for Adafruit Industries
-// Uses the CircuitPlayground library to easily use the full functionality of the board
+// Section 4.b.III "Temperature to Sound"
+
+// The purpose of this section was to show off the board's temperature sensor as well as buzzer where 
+// the buzzer changed based on the temperature reading.
+
+// Group Members: Josh Wild, Dayne Newman
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)
+// Date: 3/26/2025
+// Code written by: Both team members 
 
 #include <Adafruit_CircuitPlayground.h>
 
