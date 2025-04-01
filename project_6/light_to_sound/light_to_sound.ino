@@ -1,6 +1,12 @@
-// Adafruit Circuit Playground - Light Theremin    Support Open Source, buy at Adafruit
-//   2016-08-07 Version 1  by Mike Barela for Adafruit Industries
-// Uses the CircuitPlayground library to easily use the full functionality of the board
+// Project 6: Part 4.b.II "Light to Sound"
+
+// The purpose of this project was to use the Circuit Playground's built-in light sensor 
+// to control sound frequency.
+
+// Group Members: Josh Wild, Dayne Newman  
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)  
+// Date: 3/31/2025  
+// Code written by: Both team members  
 
 #include <Adafruit_CircuitPlayground.h>
 
@@ -9,7 +15,7 @@ void setup() {
 }
  
 void loop() {
-   uint16_t value, sound;
+   uint16_t value, sound; //variables for light sensor reading and tone frequency
    if(CircuitPlayground.slideSwitch()) {      // if the slide switch is on
      value = CircuitPlayground.lightSensor(); //   read the light sensor
      sound = map(value, 5, 1000, 131, 1760);  //   map light values to music values
