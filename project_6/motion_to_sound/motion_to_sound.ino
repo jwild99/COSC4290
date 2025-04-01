@@ -1,6 +1,12 @@
-// Adafruit Circuit Playground - Movement to Sound    Support Open Source, buy Adafruit
-//   2016-08-07 Version 1  by Mike Barela for Adafruit Industries
-// Uses the CircuitPlayground library 
+// Project 6: Part 4.b.IV "Motion to Sound"
+
+// The purpose of this project was to use the Circuit Playground’s built-in accelerometer to 
+// detect motion and map it to sound frequencies. 
+
+// Group Members: Josh Wild, Dayne Newman  
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)  
+// Date: 3/31/2025  
+// Code written by: Both team members  
 
 #include <Adafruit_CircuitPlayground.h>
 
@@ -10,8 +16,8 @@ void setup() {
 }
  
 void loop() {
-   float movementX, movementY, movementZ, movement;
-   uint16_t sound;
+   float movementX, movementY, movementZ, movement; //variables for motion detection
+   uint16_t sound; //holds tone frequency 
    if(CircuitPlayground.slideSwitch()) {   // sense & play when slide whitch at "+"
       movementX = abs(CircuitPlayground.motionX());  // read the X motion (absolute value)
       movementY = abs(CircuitPlayground.motionY());  // read the Y motion (absolute value)
