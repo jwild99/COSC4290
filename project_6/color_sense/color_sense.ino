@@ -1,19 +1,14 @@
-// Circuit Playground Color Sensing Example
-// Use a NeoPixel RGB LED and light sensor on the Circuit Playground board to
-// do basic color detection.  By quickly flashing full red, green, and blue color
-// light from the NeoPixel the light sensor can read the intensity of the
-// reflected light and roughly approximate the color of the object.
-//
-// After uploading the sketch to Circuit Playground you can press and release the
-// left or right button to do a color sense and print the red, green, blue component
-// values to the serial monitor (115200 baud).  In addition all the NeoPixels on
-// the board will be lit up to the detected color.  You should hold a brightly
-// colored object right above the light sensor and NeoPixel #1 (upper
-// left part of board, look for the eye symbol next to the color sensor) when
-// performing the color sense.
-//
-// Author: Limor Fried & Tony DiCola
-// License: MIT License (https://opensource.org/licenses/MIT)
+// Project 6: Part 3 "Color Sense"
+
+// The purpose of this project was to use the Circuit Playground's onboard color sensor 
+// to detect RGB values from an external surface and display the color based on clicking
+// the right or left button
+
+// Group Members: Josh Wild, Dayne Newman  
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)  
+// Date: 3/31/2025  
+// Code written by: Both team members  
+
 #include <Adafruit_CircuitPlayground.h>
 #include <Wire.h>
 #include <SPI.h>
@@ -31,7 +26,7 @@ void loop() {
   // or released) then the two readings will be different.
   bool left_first = CircuitPlayground.leftButton();
   bool right_first = CircuitPlayground.rightButton();
-  delay(20);
+  delay(20); //wait 20ms
   bool left_second = CircuitPlayground.leftButton();
   bool right_second = CircuitPlayground.rightButton();
   // Now check if either button was released, i.e. changed from a true (pressed)
@@ -60,6 +55,6 @@ void loop() {
     for (int i=0; i<10; ++i) {
       CircuitPlayground.strip.setPixelColor(i, red, green, blue);
     }
-    CircuitPlayground.strip.show();
+    CircuitPlayground.strip.show(); //showing new colors
   }
 }
