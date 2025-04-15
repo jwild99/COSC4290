@@ -1,3 +1,15 @@
+// Project 7: Part 3.1
+
+// The purpose of this part was to set up serial communication between the Arduino 
+// and an HC-05 Bluetooth module. This allowed wireless data transmission using the 
+// serial monitor. The code supports two-way communication between the Arduino and 
+// any Bluetooth-enabled device.
+//
+// Group Members: Josh Wild, Dayne Newman  
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)  
+// Date: 4/14/2025  
+// Code written by: Both team members 
+
 // Basic Bluetooth sketch HC-05_02_38400
 // Connect the HC-05 module and communicate using the serial monitor
 //
