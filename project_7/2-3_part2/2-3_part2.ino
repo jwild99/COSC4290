@@ -1,3 +1,13 @@
+// Project 7: Part 2.3 Part 2
+
+// The purpose of this part was to interface with the APDS-9960 sensor. 
+// The sensor was used to read ambient light, RGB color data, and proximity values. 
+// The results were printed to the serial monitor for monitoring and debugging.
+
+// Group Members: Josh Wild, Dayne Newman  
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)  
+// Date: 4/9/2025  
+// Code written by: Both team members
 #include <Wire.h>
 #include <SparkFun_APDS9960.h>
 SparkFun_APDS9960 apds = SparkFun_APDS9960();
