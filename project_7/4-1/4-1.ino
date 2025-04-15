@@ -1,3 +1,15 @@
+// Project 7: Part 4.1
+
+// The purpose of this part was to create a graphical interface in Processing that 
+// communicates with an Arduino via Bluetooth. The program allows the user to click 
+// on buttons to send commands to dim or brighten an LED. The interface also displays 
+// real-time LED status feedback from the Arduino.
+//
+// Group Members: Josh Wild, Dayne Newman  
+// Group Number: 14 (not sure this is what the bottom of the breadboard said)  
+// Date: 4/14/2025  
+// Code written by: Both team members 
+
 import processing.serial.*; //Include Serial library and create a serial object to enable
 
 serial communication
