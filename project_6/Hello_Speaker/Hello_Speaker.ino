@@ -1,4 +1,4 @@
-// Project 6: Part 4.a.I "Hello Analog"
+// Project 6: Part 3 "Hello Circuit Playgound"
 //
 // The purpose of this project was to show the basic sound output using the Circuit Playground's built-in speaker. 
 //
